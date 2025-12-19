@@ -54,3 +54,14 @@ JavaScript (ES6)
 jQuery
 HTML5 Drag & Drop API
 localStorage
+
+4. 실행방법
+
+프로젝트 폴더를 다운로드
+로컬 서버 실행 (예: Python)
+"python -m http.server 5500"
+
+브라우저에서 접속
+"http://localhost:5500"
+
+* PC환경상 live server 라이브러리 추가로 진행하지 못해 파이썬으로 진행하였습니다
