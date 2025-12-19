@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>문장 완성 게임</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="overlay" id="startScreen">
+  <div class="start-box">
+    <h2>게임 시작</h2>
+    <p>이름을 입력해주세요</p>
+    <input type="text" id="nameInput" placeholder="이름">
+    <button id="startBtn">시작하기</button>
+  </div>
+</div>
+
+<div class="app">
+
+  <div class="header">
+    <span id="userName"></span>
+  </div>
+
+  <div class="stats">
+    <div>총 게임 수: <span id="totalCount">0</span></div>
+    <div>진행 게임: <span id="currentCount">0</span></div>
+    <div>총 점수: <span id="totalScore">0</span></div>
+  </div>
+
+  <div class="content">
+    <div class="system">
+      문제: <span id="korText"></span>
+    </div>
+
+    <div class="answer-panel">
+      <div class="slots" id="answerSlots"></div>
+    </div>
+
+    <div class="card-panel" id="sourceBox"></div>
+
+    <div id="msg"></div>
+
+    <div class="history">
+      <h4>게임 기록</h4>
+      <ul id="historyList"></ul>
+    </div>
+  </div>
+
+  <div class="input-box">
+    <button id="checkBtn">정답 확인</button>
+    <button id="nextBtn">다음 문제</button>
+  </div>
+
+</div>
+
+<script src="jquery-3.7.1.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
